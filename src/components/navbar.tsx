@@ -9,7 +9,7 @@ export default async function Navbar() {
 
   const {
     data: { user },
-  } = await (await supabase).auth.getUser();
+  } = await supabase.auth.getUser();
 
   return (
     <nav className="w-full border-b border-[#30363D] bg-[#0D1117] py-4">
